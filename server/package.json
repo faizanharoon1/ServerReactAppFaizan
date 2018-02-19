@@ -1,12 +1,13 @@
 {
-  "name": "react-ssr-faizan",
+  "name": "react-serverside-faizan",
   "version": "1.0.0",
   "description": "Server side rendering project by Faizan H",
   "main": "index.js",
   "scripts": {
-    "dev:build:server": "webpack --config webpack.server.js"
+    "dev:server": "nodemon --watch build --exec node build/bundle.js",
+    "dev:build:server": "webpack --config webpack.server.js --watch"
   },
-  "author": "",
+  "author": "Faizan H , Developer",
   "license": "ISC",
   "dependencies": {
     "axios": "0.16.2",
